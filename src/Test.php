@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\Http;
 class Test {
 
     public function justDoIt() {
-        $response = Http::get('https://www.google.com');
+        // $response = Http::get('https://www.google.com');
 
         dd('Nfgarching\Testing\Test.php');
 
-        dd($response->body());
+        // dd($response->body());
 
-        return $response['headers'];
+        // return $response['headers'];
     }
 
 }
