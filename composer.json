@@ -1,0 +1,16 @@
+{
+    "name": "nfgarching/testing",
+    "description": "Dies ist ein Test",
+    "autoload": {
+        "psr-4": {
+            "Nfgarching\\Testing\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Norbert (ws088)",
+            "email": "norbert.froehler@gmail.com"
+        }
+    ],
+    "require": {}
+}
