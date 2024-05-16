@@ -12,6 +12,13 @@
             "email": "norbert.froehler@gmail.com"
         }
     ],
+    "extra": {
+		"laravel": {
+			"providers": [
+				"Nfgarching\\Testing\\Providers\\TestProvider"
+			]
+		}
+	},
     "minimum-stability": "stable",
     "require": {}
 }
