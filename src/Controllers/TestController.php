@@ -11,7 +11,7 @@ class TestController
 
         // $quote = $inspire->justDoIt();
 
-        dd('Nfgarching\Testing\Controllers\TestController.php');
+        // dd('Nfgarching\Testing\Controllers\TestController.php');
 
 
         return view('inspire::index');

@@ -3,6 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use Nfgarching\Testing\Controllers\TestController;
 
-dd('Nfgarching\Testing\routes\web.php');
+// dd('Nfgarching\Testing\routes\web.php');
 
-Route::get('inspire', TestController::class);
+Route::get('testing', TestController::class);
