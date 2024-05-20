@@ -15,14 +15,18 @@ class TestServiceProvider extends ServiceProvider
     {
         // dd('Nfgarching\Testing\Providers\TestProvider.php');
 
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/../views', 'inspire');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/views', 'testing');
 
 
         $this->publishes([
             __DIR__.'/../config/testing.php' => config_path('testing.php'),
         ]);        
 
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/vendor/testing'),
+        ]);
+    
     }
 
 }

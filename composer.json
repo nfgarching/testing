@@ -1,24 +1,45 @@
 {
     "name": "nfgarching/testing",
     "description": "Dies ist ein Test",
+    "keywords": [
+        "norbert-froehler",
+        "laravel",
+        "laravel-testing"
+    ],
+    "homepage": "https://github.com/nfgarching/testing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Norbert Fröhler",
+            "email": "norbert.froehler@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Nfgarching\\Testing\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Norbert (ws088)",
-            "email": "norbert.froehler@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "Nfgarching\\Testing\\Tests\\": "tests/"
         }
-    ],
+    },
+    "scripts": {
+        "test": "./vendor/bin/testbench package:test --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
     "extra": {
 		"laravel": {
 			"providers": [
-				"Nfgarching\\Testing\\Providers\\TestProvider"
+				"Nfgarching\\Testing\\App\\Providers\\TestServiceProvider"
 			]
 		}
 	},
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {}
 }
