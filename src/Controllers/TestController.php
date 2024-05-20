@@ -14,7 +14,7 @@ class TestController
         // dd('Nfgarching\Testing\Controllers\TestController.php');
 
 
-        return view('inspire::index');
+        return view('testing::index');
 
         // return $quote;
     }
